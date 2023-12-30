@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    margin-top: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 3px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+button:focus {
+    outline: none;
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+input[type="text"]:focus::placeholder,
+input[type="number"]:focus::placeholder {
+    color: #fff;
+}
+
+button#buttonClr {
+    background-color: #e74c3c;
+}
+
+button#buttonClr:hover {
+    background-color: #c0392b;
+}
+
+.wrapper {
+    margin-top: 30px;
+}
+
+select,
+table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+select {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #3498db;
+    color: #000;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
